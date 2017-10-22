@@ -9,6 +9,9 @@ module.exports = {
           'react',
           'stage-0',
           ['env', { targets: { browsers: ['last 2 versions'] }}]
+        ],
+        plugins: [
+          require.resolve('babel-plugin-transform-class-properties')
         ]
       }
     }]
